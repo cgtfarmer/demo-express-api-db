@@ -14,3 +14,9 @@ CREATE TABLE users (
   weight FLOAT,
   smoker BOOLEAN
 );
+
+INSERT INTO users (first_name, last_name, age, weight, smoker)
+VALUES ('John', 'Doe', 35, 183.7, false);
+
+INSERT INTO users (first_name, last_name, age, weight, smoker)
+VALUES ('Jane', 'Doe', 33, 155.1, false);
