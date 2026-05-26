@@ -26,5 +26,9 @@ services:
       MYSQL_ROOT_PASSWORD: super
     volumes:
       - ./db/setup.sql:/docker-entrypoint-initdb.d/setup.sql
-      # Uncomment this if you want the DB to stop erasing data when bringing the stack down
-      # - db:/var/lib/mysql
+      # Uncomment the following lines to enable DB persistence across container restarts
+      # - mysql:/var/lib/mysql
+
+# Uncomment the following lines to enable DB persistence across container restarts
+# volumes:
+  # mysql:
